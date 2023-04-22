@@ -1,1 +1,6 @@
-{"name": "nextbackend", "version": "1.0.0", "description": "a simplylive nextbackend library", "homepage": "git@bitbucket.org:id4tv/nextbackend.git"}
+{
+    "name": "nextbackend",
+    "version": "1.0.1",
+    "description": "a simplylive nextbackend library",
+    "homepage": "git@bitbucket.org:id4tv/nextbackend.git"
+}
