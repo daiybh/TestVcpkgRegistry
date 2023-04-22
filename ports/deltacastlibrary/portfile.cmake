@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/deltacastlibrary.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 1bf49dd7dd0032253634fe704b3041d5039df1b4
     HEAD_REF master    
 )
 
