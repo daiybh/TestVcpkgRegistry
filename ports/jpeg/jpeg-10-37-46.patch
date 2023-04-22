@@ -1,0 +1,13 @@
+diff --git forkSrcPrefix/CMakeLists.txt forkDstPrefix/CMakeLists.txt
+index 3a0dc9eb86798939529a48ee997177d4ffa95152..320e0af5b1a2c030007d96b1ae76ef7871201b08 100644
+--- forkSrcPrefix/CMakeLists.txt
++++ forkDstPrefix/CMakeLists.txt
+@@ -28,4 +28,6 @@ simplylive_install(NAME JpegFrame
+ 									${CMAKE_SOURCE_DIR}/include/jpegDecoder.h
+ 						)
+ 
+-add_subdirectory(test)
++if(SIMPLYLIVE_GENERATE_TESTEXE)
++        add_subdirectory(test)
++endif()
+\ No newline at end of file

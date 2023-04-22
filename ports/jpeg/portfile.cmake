@@ -2,9 +2,11 @@
 
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
-    URL git@bitbucket.org:id4tv/videoframe.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    URL git@bitbucket.org:id4tv/jpeg.git
+    REF 60dd6e8e0e95db15b04f95b01b2510c2c545d503
     HEAD_REF master
+    PATCHES
+        jpeg-10-37-46.patch
 )
 
 
@@ -24,6 +26,7 @@ vcpkg_configure_cmake(
   PREFER_NINJA
   OPTIONS
       -DSIMPLYLIVE_GENERATE_TESTEXE=OFF
+      -DSIMPLYLIVE_INSTALL_PATH=OFF
 )
 
 vcpkg_install_cmake()
