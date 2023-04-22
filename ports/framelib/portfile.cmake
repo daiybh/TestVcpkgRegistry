@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/framelib.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF d54e3f622c4c285dbf9e7a4e2b12c235e591e950
     HEAD_REF master    
 )
 
