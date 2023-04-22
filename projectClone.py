@@ -37,6 +37,22 @@ def makeNewPort(full_name,url):
 
     portfile_str = portfile_str.replace('CURRENT_BITBUCKET_REPO_GIT_URL', url)
     portfile_cmake_path.write_text(portfile_str)
+    port_version_folder="./versions/" + name[0] + "-/"
+    port_version_path=port_version_folder + name + ".json"
+
+    if not os.path.exists(port_version_folder):
+        os.makedirs(port_version_folder)  
+        
+    with open(port_version_path,'w') as f:    
+        port_version_json={
+        "versions": [
+        {
+            "version": "1.0.0",
+            "git-tree": "6dc64b4368b163307641e0bfd33c0938b2c65d23"
+        }
+        ]
+    }
+        f.write(json.dumps(port_version_json))
 
 
 
