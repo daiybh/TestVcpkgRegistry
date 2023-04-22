@@ -1,1 +1,6 @@
-{"name": "setup", "version": "1.0.0", "description": "a simplylive setup library", "homepage": "git@bitbucket.org:id4tv/setup.git"}
+{
+    "name": "setup",
+    "version": "1.0.1",
+    "description": "a simplylive setup library",
+    "homepage": "git@bitbucket.org:id4tv/setup.git"
+}
