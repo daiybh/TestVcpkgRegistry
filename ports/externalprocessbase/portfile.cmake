@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/externalprocessbase.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 28e47f8ff516ba6e0dd6cb0b118d23480e0ef926
     HEAD_REF master    
 )
 
