@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/dantebridgeapp.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF f63b7fb57324e42fa017b6ae91525a3fc84289af
     HEAD_REF master    
 )
 
