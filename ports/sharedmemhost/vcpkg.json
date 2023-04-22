@@ -1,1 +1,6 @@
-{"name": "sharedmemhost", "version": "1.0.0", "description": "a simplylive sharedmemhost library", "homepage": "git@bitbucket.org:id4tv/sharedmemhost.git"}
+{
+    "name": "sharedmemhost",
+    "version": "1.0.1",
+    "description": "a simplylive sharedmemhost library",
+    "homepage": "git@bitbucket.org:id4tv/sharedmemhost.git"
+}
