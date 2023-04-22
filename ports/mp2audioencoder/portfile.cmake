@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/mp2audioencoder.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 697a09f1658ba078d23804d517dd1ff4c401e071
     HEAD_REF master    
 )
 
