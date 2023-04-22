@@ -1,1 +1,6 @@
-{"name": "videoframegpu", "version": "1.0.0", "description": "a simplylive videoframegpu library", "homepage": "git@bitbucket.org:id4tv/videoframegpu.git"}
+{
+    "name": "videoframegpu",
+    "version": "1.0.1",
+    "description": "a simplylive videoframegpu library",
+    "homepage": "git@bitbucket.org:id4tv/videoframegpu.git"
+}
