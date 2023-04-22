@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/srtlib.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 6c585451adfa1408650fb32d54f8f340d7e2abad
     HEAD_REF master    
 )
 

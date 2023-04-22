@@ -1,1 +1,6 @@
-{"name": "srtlib", "version": "1.0.0", "description": "a simplylive srtlib library", "homepage": "git@bitbucket.org:id4tv/srtlib.git"}
+{
+    "name": "srtlib",
+    "version": "1.0.1",
+    "description": "a simplylive srtlib library",
+    "homepage": "git@bitbucket.org:id4tv/srtlib.git"
+}
