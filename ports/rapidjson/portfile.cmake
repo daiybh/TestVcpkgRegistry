@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/rapidjson.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF ca187bdb84e086e169d7fe28997292cb75f5e563
     HEAD_REF master    
 )
 
