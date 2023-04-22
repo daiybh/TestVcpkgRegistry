@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/asiodll.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF b64b3c0d8616bde41901597592316c6bb18e8b90
     HEAD_REF master    
 )
 
