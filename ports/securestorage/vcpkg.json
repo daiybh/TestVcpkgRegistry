@@ -1,1 +1,6 @@
-{"name": "securestorage", "version": "1.0.0", "description": "a simplylive securestorage library", "homepage": "git@bitbucket.org:id4tv/securestorage.git"}
+{
+    "name": "securestorage",
+    "version": "1.0.1",
+    "description": "a simplylive securestorage library",
+    "homepage": "git@bitbucket.org:id4tv/securestorage.git"
+}
