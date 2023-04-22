@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/dnxgpu.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 0d743e081ab42938dc8904806653cfd329eee138
     HEAD_REF master    
 )
 
