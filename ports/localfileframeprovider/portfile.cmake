@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/localfileframeprovider.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 56a93272cc52340a22ca11930ee7374a140da879
     HEAD_REF master    
 )
 
