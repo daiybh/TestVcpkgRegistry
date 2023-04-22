@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/videodecoderdebuginfo.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF e777b322eb5cff351552727b82c77939497922c6
     HEAD_REF master    
 )
 

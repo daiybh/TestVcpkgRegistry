@@ -1,1 +1,6 @@
-{"name": "videodecoderdebuginfo", "version": "1.0.0", "description": "a simplylive videodecoderdebuginfo library", "homepage": "git@bitbucket.org:id4tv/videodecoderdebuginfo.git"}
+{
+    "name": "videodecoderdebuginfo",
+    "version": "1.0.1",
+    "description": "a simplylive videodecoderdebuginfo library",
+    "homepage": "git@bitbucket.org:id4tv/videodecoderdebuginfo.git"
+}
