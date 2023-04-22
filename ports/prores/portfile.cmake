@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/prores.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 896e7d5b43ab0d7ae849ded3298057d2515ee408
     HEAD_REF master    
 )
 
