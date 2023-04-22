@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/cmaketemplate.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF db59b02788f7ade8fe7f192de6d591445168b1d2
     HEAD_REF master    
 )
 
