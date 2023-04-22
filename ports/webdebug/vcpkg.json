@@ -1,1 +1,6 @@
-{"name": "webdebug", "version": "1.0.0", "description": "a simplylive webdebug library", "homepage": "git@bitbucket.org:id4tv/webdebug.git"}
+{
+    "name": "webdebug",
+    "version": "1.0.1",
+    "description": "a simplylive webdebug library",
+    "homepage": "git@bitbucket.org:id4tv/webdebug.git"
+}
