@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/frameanalyzerconsumer.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF f644def132b743509cc061cd5f1fd59b5030690f
     HEAD_REF master    
 )
 
