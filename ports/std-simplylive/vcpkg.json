@@ -1,1 +1,6 @@
-{"name": "std-simplylive", "version": "1.0.0", "description": "a simplylive std-simplylive library", "homepage": "git@bitbucket.org:id4tv/std-simplylive.git"}
+{
+    "name": "std-simplylive",
+    "version": "1.0.1",
+    "description": "a simplylive std-simplylive library",
+    "homepage": "git@bitbucket.org:id4tv/std-simplylive.git"
+}

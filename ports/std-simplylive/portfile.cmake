@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/std-simplylive.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 4ce052589c8c0e644a98572e9bbcc9836acaf6ed
     HEAD_REF master    
 )
 
