@@ -1,1 +1,6 @@
-{"name": "patterngeneratorprovider", "version": "1.0.0", "description": "a simplylive patterngeneratorprovider library", "homepage": "git@bitbucket.org:id4tv/patterngeneratorprovider.git"}
+{
+    "name": "patterngeneratorprovider",
+    "version": "1.0.1",
+    "description": "a simplylive patterngeneratorprovider library",
+    "homepage": "git@bitbucket.org:id4tv/patterngeneratorprovider.git"
+}
