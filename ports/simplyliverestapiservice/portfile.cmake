@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/simplyliverestapiservice.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 1b64a50f3a6da93f383efdae8e7fb196541d50e4
     HEAD_REF master    
 )
 
