@@ -1,1 +1,6 @@
-{"name": "httpmodule", "version": "1.0.0", "description": "a simplylive httpmodule library", "homepage": "git@bitbucket.org:id4tv/httpmodule.git"}
+{
+    "name": "httpmodule",
+    "version": "1.0.1",
+    "description": "a simplylive httpmodule library",
+    "homepage": "git@bitbucket.org:id4tv/httpmodule.git"
+}

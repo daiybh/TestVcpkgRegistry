@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/httpmodule.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 9820c8822f7877b81e0924bed4a7503c08f34700
     HEAD_REF master    
 )
 
