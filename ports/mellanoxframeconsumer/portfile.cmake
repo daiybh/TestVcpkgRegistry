@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/mellanoxframeconsumer.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF d7fd0f8ee251f3c10336fb58e9c2c981fdd3c7fd
     HEAD_REF master    
 )
 

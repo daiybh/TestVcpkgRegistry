@@ -1,1 +1,6 @@
-{"name": "mellanoxframeconsumer", "version": "1.0.0", "description": "a simplylive mellanoxframeconsumer library", "homepage": "git@bitbucket.org:id4tv/mellanoxframeconsumer.git"}
+{
+    "name": "mellanoxframeconsumer",
+    "version": "1.0.1",
+    "description": "a simplylive mellanoxframeconsumer library",
+    "homepage": "git@bitbucket.org:id4tv/mellanoxframeconsumer.git"
+}
