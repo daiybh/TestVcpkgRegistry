@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/listofallsubmodules.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 549720e1d548c987e62e0196f575d023576b77e3
     HEAD_REF master    
 )
 
