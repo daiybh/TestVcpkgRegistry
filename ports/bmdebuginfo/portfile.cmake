@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/bmdebuginfo.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 02adf0307ca9df2bdb41e91acc06f96ddf6a9f33
     HEAD_REF master    
 )
 
