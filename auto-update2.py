@@ -6,10 +6,13 @@
 # the sections include REPO REF SHA512 HEAD_REF
 #  update REF SHA512  form REPO 
 
+import json
 import pathlib,re
 
 import argparse 
 import requests
+import version_parser
+import git
 
 from checkbitbucket import getLastCommit
 
@@ -70,6 +73,7 @@ args = parser.parse_args()
 
 force_update = args.f
 
+git_repo = git.Repo("./")
 ports_folder = pathlib.Path("./ports")
 for port in ports_folder.iterdir():
     vcpkg_json_path = port.joinpath("vcpkg.json")
@@ -98,3 +102,43 @@ for port in ports_folder.iterdir():
             #portfile_str = portfile_str.replace(github_sha, latest_sha512)
             portfile_str = portfile_str.replace(cur_ref, latest_commit)
             portfile_cmake_path.write_text(portfile_str)
+
+            # Update vcpkg.json
+            vcpkg_json = json.loads(vcpkg_json_path.read_text())
+            version = version_parser.Version(vcpkg_json['version'])
+            version._build_version += 1
+            vcpkg_json['version'] = str(version)
+            vcpkg_json_path.write_text(json.dumps(vcpkg_json))
+
+            # Update Git
+            try:
+                git_repo.git.add(port.absolute()) 
+                git_repo.git.commit(m="Update " + port.name)
+                git_repo.remote().push()
+            except:
+                pass
+            git_tree_object_id = str(git_repo.rev_parse("HEAD:ports/" + port.name))
+            print(f"- Latest git-tree = {git_tree_object_id}")
+
+            # Update Versions
+            port_version_path = pathlib.Path(
+                "./versions/" + port.name[0] + "-/" + port.name + ".json")
+            port_version_json = json.loads(port_version_path.read_text())
+            port_version_json['versions'].append(
+                {"version-string": str(version), "git-tree": git_tree_object_id})
+            port_version_path.write_text(json.dumps(port_version_json))
+
+            # Update Baseline
+            baseline_path = pathlib.Path("./versions/baseline.json")
+            baseline_json = json.loads(baseline_path.read_text())
+            baseline_json['default'][port.name]['baseline'] = str(version)
+            baseline_path.write_text(json.dumps(baseline_json))
+
+# Update Git Root
+try:
+    git_repo.git.add(".") 
+    git_repo.git.commit(m="Update Root")
+    git_repo.remote().push()
+except:
+    pass
+print("Complete")
