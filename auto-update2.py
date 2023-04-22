@@ -9,7 +9,8 @@
 import json
 import pathlib,re
 
-import argparse 
+import argparse
+import time
 import requests
 import version_parser
 import git
@@ -45,6 +46,7 @@ def parse_vcpkg_from(portfile,beginKey="vcpkg_from_github(",endKey="vcpkg_from_g
             ret[items[i]] = items[i + 1]
         metaDataList.append(ret)
     return metaDataList
+
 #https://api.bitbucket.org/2.0/repositories/id4tv/jpeg/commit
 def github_get_latest_commit(repo, head):
     r = requests.get(f"https://api.github.com/repos/{repo}/commits/{head}", proxies={
@@ -93,9 +95,7 @@ args = parser.parse_args()
 
 force_update = args.f
 
-git_repo = git.Repo("./")
-ports_folder = pathlib.Path("./ports")
-for port in ports_folder.iterdir():
+def UpdatePort(port):
     vcpkg_json_path = port.joinpath("vcpkg.json")
     portfile_cmake_path = port.joinpath("portfile.cmake")
     if vcpkg_json_path.exists() and portfile_cmake_path.exists():
@@ -104,13 +104,16 @@ for port in ports_folder.iterdir():
         portfile_str = portfile_cmake_path.read_text()
         github_meta = parse_vcpkgGitForm(portfile_str)
         if github_meta is None:
-            continue
-        for meta in github_meta:
-            print(meta)
+            return
+        bFirst=True
+        strVersion=''
+        for meta in github_meta:            
             cur_ref=meta['REF']
             latest_commit = bitbucket_get_last_commit(meta['URL'], meta['HEAD_REF'])
+            
             if latest_commit ==cur_ref  and not force_update:
-                print("- Already up-to-date.")
+                print(f"- {meta['URL']} Already up-to-date.")
+                bFirst=False
                 continue
 
             # Calculate Latest SHA512
@@ -124,32 +127,48 @@ for port in ports_folder.iterdir():
             portfile_cmake_path.write_text(portfile_str)
 
             # Update vcpkg.json
-            vcpkg_json = json.loads(vcpkg_json_path.read_text())
-            version = version_parser.Version(vcpkg_json['version'])
-            version._build_version += 1
-            vcpkg_json['version'] = str(version)
-            vcpkg_json_path.write_text(json.dumps(vcpkg_json,indent=4))
+            if bFirst:
+                vcpkg_json = json.loads(vcpkg_json_path.read_text())
+                version = version_parser.Version(vcpkg_json['version'])
+                version._build_version += 1
+                vcpkg_json['version'] = str(version)
+                strVersion=str(version)
+                vcpkg_json_path.write_text(json.dumps(vcpkg_json,indent=4))
 
-            # Update Git
-            try:
-                git_repo.git.add(port.absolute()) 
-                git_repo.git.commit(m="Update " + port.name)
-                git_repo.remote().push()
-            except:
-                pass
-            git_tree_object_id = str(git_repo.rev_parse("HEAD:ports/" + port.name))
-            print(f"- Latest git-tree = {git_tree_object_id}")
+            bFirst=False
+        if strVersion=='':
+            return
+        # Update Git
+        try:
+            git_repo.git.add(port.absolute()) 
+            git_repo.git.commit(m="Update " + port.name)
+            git_repo.remote().push()
+        except:
+            pass
+        git_tree_object_id = str(git_repo.rev_parse("HEAD:ports/" + port.name))
+        print(f"- Latest git-tree = {git_tree_object_id}")
 
-            # Update Versions
-            updatePortVersion(port.name,version,git_tree_object_id)
+        # Update Versions
+        updatePortVersion(port.name,strVersion,git_tree_object_id)
 
-            # Update Baseline
-            baseline_path = pathlib.Path("./versions/baseline.json")
-            baseline_json = json.loads(baseline_path.read_text())
-            if port.name not in baseline_json['default']:
-                baseline_json['default'][port.name] = {}
-            baseline_json['default'][port.name]['baseline'] = str(version)
-            baseline_path.write_text(json.dumps(baseline_json,indent=4))
+        # Update Baseline
+        baseline_path = pathlib.Path("./versions/baseline.json")
+        baseline_json = json.loads(baseline_path.read_text())
+        if port.name not in baseline_json['default']:
+            baseline_json['default'][port.name] = {}
+        baseline_json['default'][port.name]['baseline'] = strVersion
+        baseline_path.write_text(json.dumps(baseline_json,indent=4))
+        
+        time.sleep(5)
+
+git_repo = git.Repo("./")
+ports_folder = pathlib.Path("./ports")
+for port in ports_folder.iterdir():
+    UpdatePort(port)
+    try:
+        print("")
+    except Exception as e:
+        print(f"Error: {port.name}  {e}")
 
 # Update Git Root
 try:

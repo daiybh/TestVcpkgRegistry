@@ -1,5 +1,293 @@
 {
     "default": {
-      "beicode": { "baseline": "1.0.0", "port-version": 0 }
+        "beicode": {
+            "baseline": "1.0.0",
+            "port-version": 0
+        },
+        "ajalib": {
+            "baseline": "1.0.1"
+        },
+        "ajalibrary": {
+            "baseline": "1.0.1"
+        },
+        "ajalibrarymodule": {
+            "baseline": "1.0.1"
+        },
+        "asiodll": {
+            "baseline": "1.0.1"
+        },
+        "audiodecoder": {
+            "baseline": "1.0.1"
+        },
+        "audiodecoderdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "audioencdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "audioencframe": {
+            "baseline": "1.0.1"
+        },
+        "audioframedec": {
+            "baseline": "1.0.1"
+        },
+        "audiouvmeterdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "audiouvmeterprovider": {
+            "baseline": "1.0.1"
+        },
+        "blackmagiclib": {
+            "baseline": "1.0.1"
+        },
+        "blackmagiclibmodule": {
+            "baseline": "1.0.1"
+        },
+        "bmdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "bmframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "bmframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "buildscript": {
+            "baseline": "1.0.1"
+        },
+        "cmaketemplate": {
+            "baseline": "1.0.1"
+        },
+        "codecbenchmark": {
+            "baseline": "1.0.1"
+        },
+        "cpuvideoencoder": {
+            "baseline": "1.0.1"
+        },
+        "dantebridgeapp": {
+            "baseline": "1.0.1"
+        },
+        "deltacastframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "deltacastframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "deltacastlibmodule": {
+            "baseline": "1.0.1"
+        },
+        "deltacastlibrary": {
+            "baseline": "1.0.1"
+        },
+        "dnx": {
+            "baseline": "1.0.1"
+        },
+        "dnxgpu": {
+            "baseline": "1.0.1"
+        },
+        "dve": {
+            "baseline": "1.0.1"
+        },
+        "dvegpu": {
+            "baseline": "1.0.1"
+        },
+        "eslowmoprovider": {
+            "baseline": "1.0.1"
+        },
+        "externalprocessbase": {
+            "baseline": "1.0.1"
+        },
+        "feedtoai": {
+            "baseline": "1.0.1"
+        },
+        "ffmpeg": {
+            "baseline": "1.0.1"
+        },
+        "frameanalyzerconsumer": {
+            "baseline": "1.0.1"
+        },
+        "framelib": {
+            "baseline": "1.0.1"
+        },
+        "framelibmodule": {
+            "baseline": "1.0.1"
+        },
+        "h264frame": {
+            "baseline": "1.0.1"
+        },
+        "httpmodule": {
+            "baseline": "1.0.1"
+        },
+        "inputsyncmonitor": {
+            "baseline": "1.0.1"
+        },
+        "inputsyncmonitordebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "jpeggpu": {
+            "baseline": "1.0.1"
+        },
+        "listofallsubmodules": {
+            "baseline": "1.0.1"
+        },
+        "localfileframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "localfileframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "loglib": {
+            "baseline": "1.0.1"
+        },
+        "mellanoxdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "mellanoxframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "mellanoxframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "mellanoxlib": {
+            "baseline": "1.0.1"
+        },
+        "mellanoxlibmodule": {
+            "baseline": "1.0.1"
+        },
+        "mosaicframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "mp2audioencoder": {
+            "baseline": "1.0.1"
+        },
+        "ndiframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "ndiframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "ndilib": {
+            "baseline": "1.0.1"
+        },
+        "ndiprovider": {
+            "baseline": "1.0.1"
+        },
+        "nextbackend": {
+            "baseline": "1.0.1"
+        },
+        "nvcodeclib": {
+            "baseline": "1.0.1"
+        },
+        "patterngeneratorprovider": {
+            "baseline": "1.0.1"
+        },
+        "prores": {
+            "baseline": "1.0.1"
+        },
+        "proresgpu": {
+            "baseline": "1.0.1"
+        },
+        "rapidjson": {
+            "baseline": "1.0.1"
+        },
+        "resample": {
+            "baseline": "1.0.1"
+        },
+        "restservicebase": {
+            "baseline": "1.0.1"
+        },
+        "roberto": {
+            "baseline": "1.0.1"
+        },
+        "sdkframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "securestorage": {
+            "baseline": "1.0.1"
+        },
+        "setup": {
+            "baseline": "1.0.1"
+        },
+        "sharedmemcorelib": {
+            "baseline": "1.0.1"
+        },
+        "sharedmemhost": {
+            "baseline": "1.0.1"
+        },
+        "sharemem": {
+            "baseline": "1.0.1"
+        },
+        "sharememoryhost": {
+            "baseline": "1.0.1"
+        },
+        "simplylive-media-server": {
+            "baseline": "1.0.1"
+        },
+        "simplylivebase": {
+            "baseline": "1.0.1"
+        },
+        "simplyliverestapiservice": {
+            "baseline": "1.0.1"
+        },
+        "srtdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "srtframeconsumer": {
+            "baseline": "1.0.1"
+        },
+        "srtframeprovider": {
+            "baseline": "1.0.1"
+        },
+        "srtlib": {
+            "baseline": "1.0.1"
+        },
+        "srtlibmodule": {
+            "baseline": "1.0.1"
+        },
+        "std-simplylive": {
+            "baseline": "1.0.1"
+        },
+        "syncprocess": {
+            "baseline": "1.0.1"
+        },
+        "syncprocessdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "test_webdebug": {
+            "baseline": "1.0.1"
+        },
+        "venuegatewaycontroller": {
+            "baseline": "1.0.1"
+        },
+        "vgdeinterlacer": {
+            "baseline": "1.0.1"
+        },
+        "videodecoder": {
+            "baseline": "1.0.1"
+        },
+        "videodecoderdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "videoencoder": {
+            "baseline": "1.0.1"
+        },
+        "videoencoderdebuginfo": {
+            "baseline": "1.0.1"
+        },
+        "videoframedec": {
+            "baseline": "1.0.1"
+        },
+        "videoframegpu": {
+            "baseline": "1.0.1"
+        },
+        "watchdog": {
+            "baseline": "1.0.1"
+        },
+        "webdebug": {
+            "baseline": "1.0.1"
+        },
+        "yuvsharedmemactor": {
+            "baseline": "1.0.1"
+        }
     }
-  }
+}
