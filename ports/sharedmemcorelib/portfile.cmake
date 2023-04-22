@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/sharedmemcorelib.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 9abfa90c1e7fea965b49d244a6f33e5e465bb489
     HEAD_REF master    
 )
 
