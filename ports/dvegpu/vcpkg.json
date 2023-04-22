@@ -1,1 +1,6 @@
-{"name": "dvegpu", "version": "1.0.0", "description": "a simplylive dvegpu library", "homepage": "git@bitbucket.org:id4tv/dvegpu.git"}
+{
+    "name": "dvegpu",
+    "version": "1.0.1",
+    "description": "a simplylive dvegpu library",
+    "homepage": "git@bitbucket.org:id4tv/dvegpu.git"
+}

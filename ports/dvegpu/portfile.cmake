@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/dvegpu.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF e308306b37992fbdc099cf03ad366272e642a5af
     HEAD_REF master    
 )
 
