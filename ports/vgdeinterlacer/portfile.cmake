@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/vgdeinterlacer.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 694dc7c5a249bfa93a9a10eeb6a05de14592b870
     HEAD_REF master    
 )
 
