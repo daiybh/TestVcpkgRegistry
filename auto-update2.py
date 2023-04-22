@@ -66,6 +66,25 @@ def parse_vcpkgGitForm(portfile):
     #allMeta.extend(bibucketMeta)
     return allMeta
 
+def updatePortVersion(portName,version,git_tree_object_id):
+    port_version_folder="./versions/" + portName[0] + "-/"
+    port_version_path=port_version_folder + portName + ".json"
+
+    if not os.path.exists(port_version_folder):
+        os.makedirs(port_version_folder)  
+        
+    with open(port_version_path,'w') as f:    
+        port_version_json={
+        "versions": [
+        {
+            "version": "1.0.0",
+            "git-tree": "6dc64b4368b163307641e0bfd33c0938b2c65d23"
+        }
+        ]
+    }
+        port_version_json['versions'].append(
+                {"version-string": str(version), "git-tree": git_tree_object_id})
+        f.write(json.dumps(port_version_json))
 
 parser = argparse.ArgumentParser(description='Auto update vcpkg private registry repo')
 parser.add_argument('-f', action='store_true', help="Force update all files, even the local portfile.cmake already up-to-date.") 
@@ -121,12 +140,7 @@ for port in ports_folder.iterdir():
             print(f"- Latest git-tree = {git_tree_object_id}")
 
             # Update Versions
-            port_version_path = pathlib.Path(
-                "./versions/" + port.name[0] + "-/" + port.name + ".json")
-            port_version_json = json.loads(port_version_path.read_text())
-            port_version_json['versions'].append(
-                {"version-string": str(version), "git-tree": git_tree_object_id})
-            port_version_path.write_text(json.dumps(port_version_json))
+            updatePortVersion(port.name,version,git_tree_object_id)
 
             # Update Baseline
             baseline_path = pathlib.Path("./versions/baseline.json")
