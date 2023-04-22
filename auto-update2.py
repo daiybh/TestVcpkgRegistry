@@ -13,6 +13,7 @@ import argparse
 import requests
 import version_parser
 import git
+import os
 
 from checkbitbucket import getLastCommit
 
@@ -84,7 +85,7 @@ def updatePortVersion(portName,version,git_tree_object_id):
     }
         port_version_json['versions'].append(
                 {"version-string": str(version), "git-tree": git_tree_object_id})
-        f.write(json.dumps(port_version_json))
+        f.write(json.dumps(port_version_json,indent=4))
 
 parser = argparse.ArgumentParser(description='Auto update vcpkg private registry repo')
 parser.add_argument('-f', action='store_true', help="Force update all files, even the local portfile.cmake already up-to-date.") 
@@ -127,7 +128,7 @@ for port in ports_folder.iterdir():
             version = version_parser.Version(vcpkg_json['version'])
             version._build_version += 1
             vcpkg_json['version'] = str(version)
-            vcpkg_json_path.write_text(json.dumps(vcpkg_json))
+            vcpkg_json_path.write_text(json.dumps(vcpkg_json,indent=4))
 
             # Update Git
             try:
@@ -145,8 +146,10 @@ for port in ports_folder.iterdir():
             # Update Baseline
             baseline_path = pathlib.Path("./versions/baseline.json")
             baseline_json = json.loads(baseline_path.read_text())
+            if port.name not in baseline_json['default']:
+                baseline_json['default'][port.name] = {}
             baseline_json['default'][port.name]['baseline'] = str(version)
-            baseline_path.write_text(json.dumps(baseline_json))
+            baseline_path.write_text(json.dumps(baseline_json,indent=4))
 
 # Update Git Root
 try:

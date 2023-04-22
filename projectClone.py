@@ -31,7 +31,7 @@ def makeNewPort(full_name,url):
     vcpkg_json['name']=name
     vcpkg_json['homepage']=url
     vcpkg_json['description']=f'a simplylive {name} library'
-    vcpkg_json_path.write_text(json.dumps(vcpkg_json))
+    vcpkg_json_path.write_text(json.dumps(vcpkg_json,indent=4))
 
     portfile_str = portfile_cmake_path.read_text()
 
