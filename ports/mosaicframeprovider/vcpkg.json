@@ -1,1 +1,6 @@
-{"name": "mosaicframeprovider", "version": "1.0.0", "description": "a simplylive mosaicframeprovider library", "homepage": "git@bitbucket.org:id4tv/mosaicframeprovider.git"}
+{
+    "name": "mosaicframeprovider",
+    "version": "1.0.1",
+    "description": "a simplylive mosaicframeprovider library",
+    "homepage": "git@bitbucket.org:id4tv/mosaicframeprovider.git"
+}
