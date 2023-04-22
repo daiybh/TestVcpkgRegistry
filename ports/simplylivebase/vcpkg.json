@@ -1,1 +1,6 @@
-{"name": "simplylivebase", "version": "1.0.0", "description": "a simplylive simplylivebase library", "homepage": "git@bitbucket.org:id4tv/simplylivebase.git"}
+{
+    "name": "simplylivebase",
+    "version": "1.0.1",
+    "description": "a simplylive simplylivebase library",
+    "homepage": "git@bitbucket.org:id4tv/simplylivebase.git"
+}
