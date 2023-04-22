@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/audioencdebuginfo.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 7ebcd4f203bbda78dc43b6a1924926ddb23b3c02
     HEAD_REF master    
 )
 
