@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/audiouvmeterprovider.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF d2c3e97ac75b59b635d2c52ea70cdbc985cca7a0
     HEAD_REF master    
 )
 
