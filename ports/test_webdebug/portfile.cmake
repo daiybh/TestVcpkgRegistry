@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/test_webdebug.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF a621820178e5b5ac4c7c498cbf4404b66a986032
     HEAD_REF master    
 )
 
