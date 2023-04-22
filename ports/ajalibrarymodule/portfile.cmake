@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/ajalibrarymodule.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF eef9cca6c259c186d5eb0b4b4912b5b6bb28514f
     HEAD_REF master    
 )
 
