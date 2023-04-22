@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/yuvsharedmemactor.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 809de947d5d4086de7fb73c7bd5e95a3b7ed7bd5
     HEAD_REF master    
 )
 
