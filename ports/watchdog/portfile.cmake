@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/watchdog.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 1d835be4fb000b9399e0b1c3087a1b239e71ebde
     HEAD_REF master    
 )
 
