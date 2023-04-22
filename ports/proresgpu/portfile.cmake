@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/proresgpu.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 29581b68156ea44a72b5c0ebaae070faa8d9bfba
     HEAD_REF master    
 )
 
