@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/blackmagiclibmodule.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 85e44ebf6d77189d979c83678cfd050b5f3ee081
     HEAD_REF master    
 )
 
