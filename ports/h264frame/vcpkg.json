@@ -1,1 +1,6 @@
-{"name": "h264frame", "version": "1.0.0", "description": "a simplylive h264frame library", "homepage": "git@bitbucket.org:id4tv/h264frame.git"}
+{
+    "name": "h264frame",
+    "version": "1.0.1",
+    "description": "a simplylive h264frame library",
+    "homepage": "git@bitbucket.org:id4tv/h264frame.git"
+}
