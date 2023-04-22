@@ -1,1 +1,6 @@
-{"name": "framelibmodule", "version": "1.0.0", "description": "a simplylive framelibmodule library", "homepage": "git@bitbucket.org:id4tv/framelibmodule.git"}
+{
+    "name": "framelibmodule",
+    "version": "1.0.1",
+    "description": "a simplylive framelibmodule library",
+    "homepage": "git@bitbucket.org:id4tv/framelibmodule.git"
+}
