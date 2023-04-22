@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/bmframeprovider.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 3c4fad9948bffbc5276eb18d5354469dcfcd9d42
     HEAD_REF master    
 )
 
