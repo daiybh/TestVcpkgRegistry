@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/videoframedec.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 7071ec5d0787a1a0caeac7f9857a13530184aadb
     HEAD_REF master    
 )
 
