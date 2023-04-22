@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/dve.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 07f1767b8a9bb1dc6be75ab0192b707e6158ffd2
     HEAD_REF master    
 )
 
