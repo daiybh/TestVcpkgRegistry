@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/sharememoryhost.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 73366adef927a0c6bde45efc9f3080a8622047e0
     HEAD_REF master    
 )
 
