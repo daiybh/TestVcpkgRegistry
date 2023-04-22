@@ -1,1 +1,6 @@
-{"name": "sdkframeconsumer", "version": "1.0.0", "description": "a simplylive sdkframeconsumer library", "homepage": "git@bitbucket.org:id4tv/sdkframeconsumer.git"}
+{
+    "name": "sdkframeconsumer",
+    "version": "1.0.1",
+    "description": "a simplylive sdkframeconsumer library",
+    "homepage": "git@bitbucket.org:id4tv/sdkframeconsumer.git"
+}
