@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/ajalib.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 0f9ed0673b4f0d8ea27a34fbdc6218e0fb21e1bc
     HEAD_REF master    
 )
 
