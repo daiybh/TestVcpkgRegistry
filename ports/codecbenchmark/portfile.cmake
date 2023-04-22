@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/codecbenchmark.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 1cca8ce092a31a824da2791a6b148bc19479f123
     HEAD_REF master    
 )
 
