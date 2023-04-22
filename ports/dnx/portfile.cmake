@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/dnx.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF a87686d01d89ef28548e4eb6a8fe6566427fc3dd
     HEAD_REF master    
 )
 
