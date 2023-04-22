@@ -1,1 +1,6 @@
-{"name": "srtframeconsumer", "version": "1.0.0", "description": "a simplylive srtframeconsumer library", "homepage": "git@bitbucket.org:id4tv/srtframeconsumer.git"}
+{
+    "name": "srtframeconsumer",
+    "version": "1.0.1",
+    "description": "a simplylive srtframeconsumer library",
+    "homepage": "git@bitbucket.org:id4tv/srtframeconsumer.git"
+}
