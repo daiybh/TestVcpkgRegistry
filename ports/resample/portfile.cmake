@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/resample.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 6aa1c15ce4c5c4989de4ca199c11c3eb4711fa24
     HEAD_REF master    
 )
 
