@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/audioencframe.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 2da149d868e72c03cd10af32649d00e5c1eff7f6
     HEAD_REF master    
 )
 
