@@ -1,1 +1,6 @@
-{"name": "inputsyncmonitordebuginfo", "version": "1.0.0", "description": "a simplylive inputsyncmonitordebuginfo library", "homepage": "git@bitbucket.org:id4tv/inputsyncmonitordebuginfo.git"}
+{
+    "name": "inputsyncmonitordebuginfo",
+    "version": "1.0.1",
+    "description": "a simplylive inputsyncmonitordebuginfo library",
+    "homepage": "git@bitbucket.org:id4tv/inputsyncmonitordebuginfo.git"
+}
