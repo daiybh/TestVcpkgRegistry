@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/loglib.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 9c5ae8388e49fe1e536b8705331aa1d2c213f6c1
     HEAD_REF master    
 )
 

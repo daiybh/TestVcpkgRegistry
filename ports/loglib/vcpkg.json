@@ -1,1 +1,6 @@
-{"name": "loglib", "version": "1.0.0", "description": "a simplylive loglib library", "homepage": "git@bitbucket.org:id4tv/loglib.git"}
+{
+    "name": "loglib",
+    "version": "1.0.1",
+    "description": "a simplylive loglib library",
+    "homepage": "git@bitbucket.org:id4tv/loglib.git"
+}
