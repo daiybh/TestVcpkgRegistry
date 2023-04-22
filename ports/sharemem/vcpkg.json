@@ -1,1 +1,6 @@
-{"name": "sharemem", "version": "1.0.0", "description": "a simplylive sharemem library", "homepage": "git@bitbucket.org:id4tv/sharemem.git"}
+{
+    "name": "sharemem",
+    "version": "1.0.1",
+    "description": "a simplylive sharemem library",
+    "homepage": "git@bitbucket.org:id4tv/sharemem.git"
+}

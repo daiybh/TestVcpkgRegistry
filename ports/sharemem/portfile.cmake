@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/sharemem.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 41d8a11ed00f4cf1429b7e680fa93153fa0453fd
     HEAD_REF master    
 )
 
