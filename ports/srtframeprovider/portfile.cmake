@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/srtframeprovider.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF b94eced34be9160ea696a76073c9fe369de905c1
     HEAD_REF master    
 )
 
