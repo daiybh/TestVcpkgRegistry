@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/venuegatewaycontroller.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 4da3a104e00e8125b627f96756c9f091e3676965
     HEAD_REF master    
 )
 
