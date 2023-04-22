@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/bmframeconsumer.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 0b28be107f725fa2ca7ebeb9eb8984aaa6008596
     HEAD_REF master    
 )
 
