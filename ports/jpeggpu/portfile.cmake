@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/jpeggpu.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 490d2e25b7d9458cb6c751468a1ea11c384a6089
     HEAD_REF master    
 )
 
