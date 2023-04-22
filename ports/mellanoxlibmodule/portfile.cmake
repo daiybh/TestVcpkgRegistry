@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/mellanoxlibmodule.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 71a619f59ddf2533af1cd2127999bca953b09d6f
     HEAD_REF master    
 )
 
