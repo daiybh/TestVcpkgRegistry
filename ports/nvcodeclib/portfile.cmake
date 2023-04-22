@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/nvcodeclib.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 891d7ba983d2ecb7f93e171077b37cf88f14464d
     HEAD_REF master    
 )
 

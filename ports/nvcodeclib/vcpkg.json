@@ -1,1 +1,6 @@
-{"name": "nvcodeclib", "version": "1.0.0", "description": "a simplylive nvcodeclib library", "homepage": "git@bitbucket.org:id4tv/nvcodeclib.git"}
+{
+    "name": "nvcodeclib",
+    "version": "1.0.1",
+    "description": "a simplylive nvcodeclib library",
+    "homepage": "git@bitbucket.org:id4tv/nvcodeclib.git"
+}
