@@ -1,1 +1,6 @@
-{"name": "simplylive-media-server", "version": "1.0.0", "description": "a simplylive simplylive-media-server library", "homepage": "git@bitbucket.org:id4tv/simplylive-media-server.git"}
+{
+    "name": "simplylive-media-server",
+    "version": "1.0.1",
+    "description": "a simplylive simplylive-media-server library",
+    "homepage": "git@bitbucket.org:id4tv/simplylive-media-server.git"
+}
