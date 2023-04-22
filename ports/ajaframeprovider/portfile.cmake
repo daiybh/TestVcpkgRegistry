@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/ajaframeprovider.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF be68c890852a3a59de39d243248d7df5c769102c
     HEAD_REF master    
 )
 
