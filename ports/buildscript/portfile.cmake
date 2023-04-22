@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/buildscript.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 20ce19e0decb3185122cbc786aeae8676f4453e5
     HEAD_REF master    
 )
 
