@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/roberto.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 8bc7c0594be3d91fb779f523ed28819d3e331c78
     HEAD_REF master    
 )
 
