@@ -3,7 +3,7 @@
 vcpkg_from_git(
     OUT_SOURCE_PATH SOURCE_PATH
     URL git@bitbucket.org:id4tv/inputsyncmonitor.git
-    REF eeefe7bd5c987bd34b7aeb6670b2d656471ed732
+    REF 93602647da41271db6dbd5dc384e293a27443b84
     HEAD_REF master    
 )
 
